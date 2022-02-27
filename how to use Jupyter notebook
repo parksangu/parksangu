@@ -1,0 +1,71 @@
+print("hello world")  # 실행이 되나 확인.
+
+## Jupyter Notebook
+
+주피터 노트북은 웹에서 개발이 가능한 도구다.
+그래프나 표 이미지, 영상 등을 쉽게 볼 수 있어서 많이 사용된다.
+
+> 교육을 위한 강의 노트로도 많이 훌륭해요!
+
+print("hello world")
+
+print("환영합니다!")
+
+name = "연탄이"
+print(name)
+
+print(1)
+print(2)
+print(3)
+
+## Jupyter Notebook
+
+주피터 노트북은 웹에서 개발이 가능한 도구다.
+그래프나 표 이미지, 영상 등을 쉽게 볼 수 있어서 많이 사용된다.
+
+> 교육을 위한 강의 노트로도 많이 훌륭해요!
+
+## 특징
+
+1. 코드를 Cell 단위로 작성 및 실행
+1. 마크다운을 통한 문서화
+1. 그래프나 표 등을 실시간으로 확인
+1. html, pdf등 파일로 저장
+
+## 사전 학습 자료
+
+
+%%HTML
+<iframe width="640" height="480" src="https://www.youtube.com/embed/dJfq-eCi7KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+import random
+print(random.randint(1, 45))
+
+# random.randint??
+
+num = 3
+
+num *= 2
+
+num += 4
+
+print(num)
+
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3]);  # Plot some data on the axes.
+
+## 시각화 예제 2 : 테이블
+pandas는 복잡한 데이터를 분석할 때 아주 유용합니다.
+
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+
+df = pd.DataFrame([[38.0, 2.0, 18.0, 22.0, 21, np.nan],[19, 439, 6, 452, 226,232]],
+                  index=pd.Index(['Tumour (Positive)', 'Non-Tumour (Negative)'], name='Actual Label:'),
+                  columns=pd.MultiIndex.from_product([['Decision Tree', 'Regression', 'Random'],['Tumour', 'Non-Tumour']], names=['Model:', 'Predicted:']))
+df.style
